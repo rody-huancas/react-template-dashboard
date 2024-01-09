@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+// Layouts
+import { LayoutAdmin, LayoutAuth } from "./layouts";
 // pages
 import { Chat, Error404, Home, Login, Register } from "./pages";
-import { LayoutAdmin, LayoutAuth } from "./layouts";
 
 const App = () => {
   return (
