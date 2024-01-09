@@ -1,14 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // pages
-import { Error404, Login, Register } from "./pages";
+import { Chat, Error404, Home, Login, Register } from "./pages";
+import { LayoutAdmin, LayoutAuth } from "./layouts";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         {/* Login */}
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/auth" element={<LayoutAuth />}>
+          <Route index element={<Login />} />
+          <Route path="register" element={<Register />} />
+        </Route>
+
+        {/* Admin */}
+        <Route path="/" element={<LayoutAdmin />}>
+          <Route index element={<Home />} />
+          <Route path="chat" element={<Chat />} />
+        </Route>
 
         {/* Error */}
         <Route path="*" element={<Error404 />} />

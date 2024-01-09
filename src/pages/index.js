@@ -7,3 +7,4 @@ export * from "./auth/Register"
 
 // Admin
 export * from "./admin/Home"
+export * from "./admin/Chat"
