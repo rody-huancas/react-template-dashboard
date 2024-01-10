@@ -54,14 +54,14 @@ export const Login = () => {
         <div>
           <button
             type="submit"
-            className="bg-primary uppercase text-sm font-medium w-full py-3 px-4 rounded-lg text-secondary-900 hover:bg-secondary-900 hover:text-primary transition-colors duration-500"
+            className="bg-primary uppercase text-sm font-semibold w-full py-3 px-4 rounded-lg text-secondary-900 hover:bg-secondary-900 hover:text-primary transition-colors duration-500"
           >
             Ingresar
           </button>
         </div>
       </form>
       <div className="flex flex-col items-center gap-2">
-        <Link to="/" className="hover:text-primary transition-colors duration-300">¿Olvidaste tu contraseña?</Link>
+        <Link to="/auth/forget-password" className="hover:text-primary transition-colors duration-300">¿Olvidaste tu contraseña?</Link>
         <span className="flex items-center gap-2">
           ¿No tienes cuenta? <Link to="/auth/register" className="text-primary hover:text-gray-100 transition-colors duration-300">Registrate</Link>
         </span>

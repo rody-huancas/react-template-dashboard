@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Layouts
 import { LayoutAdmin, LayoutAuth } from "./layouts";
 // pages
-import { Chat, Error404, Home, Login, Register } from "./pages";
+import { Chat, Error404, ForgetPassword, Home, Login, Register } from "./pages";
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
         <Route path="/auth" element={<LayoutAuth />}>
           <Route index element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="forget-password" element={<ForgetPassword />} />
         </Route>
 
         {/* Admin */}
