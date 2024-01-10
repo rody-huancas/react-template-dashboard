@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 // icons
 import {
@@ -5,12 +6,12 @@ import {
   RiBarChart2Line,
   RiCalendarTodoLine,
   RiCloseLine,
+  RiCustomerService2Line,
   RiEarthLine,
   RiLogoutCircleLine,
   RiMenu3Line,
   RiMessage3Line,
 } from "react-icons/ri";
-import { useState } from "react";
 
 export const Sidebar = () => {
   const [showSubmenu, setShowSubmenu] = useState(false);
@@ -84,6 +85,14 @@ export const Sidebar = () => {
                 className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
               >
                 <RiMessage3Line className="text-primary" /> Messages
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/"
+                className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
+              >
+                <RiCustomerService2Line className="text-primary" /> Technical Support
               </Link>
             </li>
             <li>
