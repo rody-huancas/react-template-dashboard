@@ -11,7 +11,7 @@ export const ForgetPassword = () => {
         Recuperar <span className="text-primary border-b py-2">Contraseña</span>
       </h1>
       <form className="mb-8">
-        <div className="relative mb-4">
+        <div className="relative mb-8">
           <RiMailLine className="absolute top-1/2 -translate-y-1/2 left-2 text-primary" />
           <input
             type="email"
