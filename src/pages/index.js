@@ -9,3 +9,4 @@ export * from "./auth/ForgetPassword"
 // Admin
 export * from "./admin/Home"
 export * from "./admin/Chat"
+export * from "./admin/Profile"

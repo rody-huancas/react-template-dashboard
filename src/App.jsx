@@ -1,24 +1,23 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Layouts
-import { LayoutAdmin, LayoutAuth } from "./layouts";
+import { LayoutAdmin } from "./layouts";
 // pages
-import { Chat, Error404, ForgetPassword, Home, Login, Register } from "./pages";
+import { Chat, Error404, ForgetPassword, Home, Login, Profile, Register } from "./pages";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         {/* Login */}
-        <Route path="/auth" element={<LayoutAuth />}>
-          <Route index element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="forget-password" element={<ForgetPassword />} />
-        </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forget-password" element={<ForgetPassword />} />
 
         {/* Admin */}
         <Route path="/" element={<LayoutAdmin />}>
           <Route index element={<Home />} />
           <Route path="chat" element={<Chat />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
 
         {/* Error */}
