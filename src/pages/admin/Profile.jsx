@@ -32,8 +32,8 @@ export const Profile = () => {
           </div>
 
           {/* Inputs */}
-          <div className="flex md:items-center mb-6">
-            <div className="w-1/4">
+          <div className="flex flex-col sm:flex-row md:items-center mb-6">
+            <div className="w-full sm:w-1/4">
               <p>Full Name <span className="text-red-500">*</span></p>
             </div>
             <div className="flex-1 flex md:items-center flex-col md:flex-row gap-4">
@@ -46,8 +46,8 @@ export const Profile = () => {
             </div>
           </div>
 
-          <div className="flex items-center mb-6">
-            <div className="w-1/4">
+          <div className="flex flex-col sm:flex-row md:items-center mb-6">
+            <div className="w-full sm:w-1/4">
               <p>Company <span className="text-red-500">*</span></p>
             </div>
             <div className="flex-1 flex items-center gap-4">
@@ -57,8 +57,8 @@ export const Profile = () => {
             </div>
           </div>
 
-          <div className="flex items-center mb-6">
-            <div className="w-1/4">
+          <div className="flex flex-col sm:flex-row md:items-center mb-6">
+            <div className="w-full sm:w-1/4">
               <p>Contact <span className="text-red-500">*</span></p>
             </div>
             <div className="flex-1 flex items-center gap-4">
@@ -68,8 +68,8 @@ export const Profile = () => {
             </div>
           </div>
 
-          <div className="flex items-center mb-6">
-            <div className="w-1/4">
+          <div className="flex flex-col sm:flex-row md:items-center mb-6">
+            <div className="w-full sm:w-1/4">
               <p>Website <span className="text-red-500">*</span></p>
             </div>
             <div className="flex-1 flex items-center gap-4">
@@ -79,8 +79,8 @@ export const Profile = () => {
             </div>
           </div>
 
-          <div className="flex items-center mb-6">
-            <div className="w-1/4">
+          <div className="flex flex-col sm:flex-row md:items-center mb-6">
+            <div className="w-full sm:w-1/4">
               <p>Country <span className="text-red-500">*</span></p>
             </div>
             <div className="flex-1">
@@ -110,34 +110,34 @@ export const Profile = () => {
         <h1 className="text-xl text-gray-100">User and Password</h1>
         <hr className="my-8 border-gray-500/30" />
         <form className="mb-6">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-y-4 justify-between">
             <div>
               <h5 className="text-gray-100 text-xl mb-1">Email</h5>
               <p className="text-sm text-gray-500">rodyhuancas@gmail.com</p>
             </div>
-            <button className="bg-secondary-900/50 py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors duration-300">Change Email</button>
+            <button className="w-full sm:w-auto bg-secondary-900/50 py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors duration-300">Change Email</button>
           </div>
 
           <hr className="my-8 border-gray-500/30 border-dashed" />
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-y-4 justify-between">
             <div>
               <h5 className="text-gray-100 text-xl mb-1">Password</h5>
               <p className="text-sm text-gray-500">******************</p>
             </div>
-            <button className="bg-secondary-900/50 py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors duration-300">Change Password</button>
+            <button className="w-full sm:w-auto bg-secondary-900/50 py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors duration-300">Change Password</button>
           </div>
         </form>
-        <div className="grid grid-cols-1 md:grid-cols-8 place-items-center bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600">
+        <div className="grid grid-cols-1 md:grid-cols-8 place-items-center bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 gap-y-5 md:gap-y-0">
           <div className="w-full flex justify-center">
             <RiShieldCheckLine className="text-5xl text-green-500" />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-6 text-center md:text-start">
             <h5 className="text-gray-100 mb-2">Secure Your Account</h5>
             <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorum repellendus numquam, nesciunt officia cum!</p>
           </div>
           <div className="w-full flex justify-center">
-            <button className="bg-green-600/70 hover:bg-green-600 transition-colors duration-300 py-2 px-4 rounded-lg text-gray-100">Activate</button>
+            <button className="w-full sm:w-auto bg-green-600/70 hover:bg-green-600 transition-colors duration-300 py-2 px-4 rounded-lg text-gray-100">Activate</button>
           </div>
         </div>
       </div>
@@ -147,12 +147,12 @@ export const Profile = () => {
         <h1 className="text-xl text-gray-100">Connected Accounts</h1>
         <hr className="my-8 border-gray-500/30" />
 
-        <div className="flex items-center gap-5 bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 mb-8">
+        <div className="flex flex-col sm:flex-row items-center gap-5 bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 mb-8">
           <div className="flex justify-center">
             <RiShieldCheckLine className="text-5xl text-green-500" />
           </div>
           <div className="flex-1">
-            <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorum repellendus numquam. <Link to="/" className="text-green-400">Read more...</Link></p>
+            <p className="text-gray-500 text-center sm:text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorum repellendus numquam. <Link to="/" className="text-green-400">Read more...</Link></p>
           </div>
         </div>
 
@@ -261,12 +261,12 @@ export const Profile = () => {
             </div>
           </div>
           <hr className="my-8 border-gray-500/30" />
+        </form>
         <div className="flex justify-end">
           <button className="bg-primary/80 text-black py-2 px-4 rounded-lg hover:bg-primary transition-colors font-medium">
             Save
           </button>
         </div>
-        </form>
       </div>
 
       {/* Ianctive accounts */}
@@ -274,11 +274,11 @@ export const Profile = () => {
         <h1 className="text-xl text-gray-100">Inactive Accounts</h1>
         <hr className="my-8 border-gray-500/30" />
 
-        <div className="flex items-center gap-5 bg-yellow-600/10 p-4 rounded-lg border border-dashed border-yellow-600 mb-8">
+        <div className="flex flex-col sm:flex-row items-center gap-5 bg-yellow-600/10 p-4 rounded-lg border border-dashed border-yellow-600 mb-8">
           <div className="flex justify-center">
             <RiErrorWarningLine className="text-5xl text-yellow-500" />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 text-center sm:text-start">
             <h5 className="text-gray-100 mb-2">You Are Deactivating Your Account</h5>
             <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorum repellendus numquam, nesciunt officia cum! <Link className="text-blue-600">Learn more...</Link></p>
           </div>
