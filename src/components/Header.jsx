@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   RiArrowDownSLine,
   RiLogoutCircleLine,
@@ -9,7 +10,6 @@ import {
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
-import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (

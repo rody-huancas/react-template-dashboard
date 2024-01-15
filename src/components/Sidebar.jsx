@@ -35,7 +35,7 @@ export const Sidebar = () => {
                 to="/"
                 className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
               >
-                <RiBarChart2Line className="text-primary" /> Analytic
+                <RiBarChart2Line className="text-primary" /> Dashboard
               </Link>
             </li>
             <li>
@@ -81,10 +81,10 @@ export const Sidebar = () => {
             </li>
             <li>
               <Link
-                to="/"
+                to="/profile"
                 className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
               >
-                <RiMessage3Line className="text-primary" /> Messages
+                <RiMessage3Line className="text-primary" /> Profile
               </Link>
             </li>
             <li>
@@ -93,14 +93,6 @@ export const Sidebar = () => {
                 className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
               >
                 <RiCustomerService2Line className="text-primary" /> Technical Support
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
-              >
-                <RiCalendarTodoLine className="text-primary" /> Calendar
               </Link>
             </li>
           </ul>
