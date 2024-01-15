@@ -94,7 +94,7 @@ export const Tickets = () => {
           {/* overview */}
           <Tab.Panel>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-secondary-100 p-8 rounded-lg">
+              <div className="bg-secondary-100 p-6 rounded-lg">
                 {/* title card */}
                 <div className="flex items-center justify-between mb-8">
                   <h1 className="text-white text-lg md:text-2xl">Popular Tickets</h1>
@@ -106,10 +106,10 @@ export const Tickets = () => {
                 {/* Content card */}
                 <div>
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       Is team pricing available?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </Disclosure.Button>
@@ -133,10 +133,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How Extended Licese Work?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Angular
                       </span>
                     </Disclosure.Button>
@@ -160,10 +160,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How to install on a local machine?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Vue.js
                       </span>
                     </Disclosure.Button>
@@ -187,10 +187,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       What admin theme does?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Laravel
                       </span>
                     </Disclosure.Button>
@@ -215,7 +215,7 @@ export const Tickets = () => {
                 </div>
               </div>
 
-              <div className="bg-secondary-100 p-8 rounded-lg">
+              <div className="bg-secondary-100 p-6 rounded-lg">
                 {/* title card */}
                 <div className="flex items-center justify-between mb-8">
                   <h1 className="text-white text-lg md:text-2xl">FAQ</h1>
@@ -227,10 +227,10 @@ export const Tickets = () => {
                 {/* Content card */}
                 <div>
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex-wrap flex md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       Is team pricing available?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </Disclosure.Button>
@@ -254,10 +254,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex-wrap flex md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How Extended Licese Work?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Angular
                       </span>
                     </Disclosure.Button>
@@ -281,10 +281,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How to install on a local machine?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Vue.js
                       </span>
                     </Disclosure.Button>
@@ -308,10 +308,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex md:items-center justify-between gap-4">
                       <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       What admin theme does?{" "}
-                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden lg:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Laravel
                       </span>
                     </Disclosure.Button>
@@ -340,9 +340,9 @@ export const Tickets = () => {
 
           {/* tickets */}
           <Tab.Panel>
-            <div className="bg-secondary-100 p-8 rounded-lg grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="bg-secondary-100 md:p-8 rounded-lg grid grid-cols-1 lg:grid-cols-4 gap-8">
               {/* section 1 */}
-              <div className="col-span-3 p-8">
+              <div className="md:col-span-3 p-8 md:p-0">
                 <form>
                   <div className="relative">
                     <RiSearch2Line className="absolute top-1/2 -translate-y-1/2 left-4" />
@@ -358,19 +358,19 @@ export const Tickets = () => {
                 <div>
                   <div className="flex flex-col gap-2 mb-8">
                     {/* ticket */}
-                    <div className="flex items-center gap-4">
-                      <RiTicketLine className="text-2xl text-yellow-500" />
+                    <div className="flex flex-wrap items-center gap-4">
+                      <RiTicketLine className="md:text-2xl text-yellow-500" />
                       <Link
                         to=""
-                        className="text-xl hover:text-yellow-500 transition-colors duration-300"
+                        className="md:text-xl hover:text-yellow-500 transition-colors duration-300"
                       >
                         How to use Netronic whit Django Framework?
                       </Link>
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </div>
-                    <div className="px-10">
+                    <div className="md:px-10">
                       <p className="text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ad ipsa nihil illo harum aut nisi recusandae, magni
@@ -382,19 +382,19 @@ export const Tickets = () => {
 
                   <div className="flex flex-col gap-2 mb-8">
                     {/* ticket */}
-                    <div className="flex items-center gap-4">
-                      <RiTicketLine className="text-2xl text-blue-500" />
+                    <div className="flex flex-wrap items-center gap-4">
+                      <RiTicketLine className="md:text-2xl text-blue-500" />
                       <Link
                         to=""
-                        className="text-xl hover:text-blue-500 transition-colors duration-300"
+                        className="md:text-xl hover:text-blue-500 transition-colors duration-300"
                       >
                         How to use Netronic whit Django Framework?
                       </Link>
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </div>
-                    <div className="px-10">
+                    <div className="md:px-10">
                       <p className="text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ad ipsa nihil illo harum aut nisi recusandae, magni
@@ -406,19 +406,19 @@ export const Tickets = () => {
 
                   <div className="flex flex-col gap-2 mb-8">
                     {/* ticket */}
-                    <div className="flex items-center gap-4">
-                      <RiTicketLine className="text-2xl text-green-500" />
+                    <div className="flex flex-wrap items-center gap-4">
+                      <RiTicketLine className="md:text-2xl text-green-500" />
                       <Link
                         to=""
-                        className="text-xl hover:text-green-500 transition-colors duration-300"
+                        className="md:text-xl hover:text-green-500 transition-colors duration-300"
                       >
                         How to use Netronic whit Django Framework?
                       </Link>
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </div>
-                    <div className="px-10">
+                    <div className="md:px-10">
                       <p className="text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Ad ipsa nihil illo harum aut nisi recusandae, magni
@@ -459,7 +459,7 @@ export const Tickets = () => {
               </div>
 
               {/* section 2 */}
-              <div>
+              <div className="p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
                 <div className="bg-secondary-900 p-8 rounded-lg mb-8">
                   <h2 className="text-2xl text-white mb-8">More Channels</h2>
                   <div>
@@ -502,7 +502,7 @@ export const Tickets = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-4 mb-8">
+                    <div className="flex items-center gap-4">
                       <RiGithubLine className="text-4xl text-primary" />
                       <div className="flex flex-col gap-1">
                         <h5 className="text-white">GitHub Access</h5>
@@ -517,7 +517,7 @@ export const Tickets = () => {
                   </div>
                 </div>
 
-                <div className="bg-secondary-900 p-8 rounded-lg">
+                <div className="bg-secondary-900 p-8 rounded-lg mb-8">
                   <h2 className="text-2xl text-white mb-8">Documentation</h2>
 
                   <ul className="flex flex-col gap-y-4">
