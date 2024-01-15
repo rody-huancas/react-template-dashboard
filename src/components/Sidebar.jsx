@@ -89,7 +89,7 @@ export const Sidebar = () => {
             </li>
             <li>
               <Link
-                to="/"
+                to="/tickets"
                 className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors duration-300"
               >
                 <RiCustomerService2Line className="text-primary" /> Technical Support

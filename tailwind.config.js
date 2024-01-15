@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#BDEB00",
+        primary: "#adea2a",
         secondary: {
           100: "#1E1F25",
           900: "#131517"
@@ -15,6 +15,9 @@ export default {
       }
     },
   },
-  plugins: [],
+   plugins: [
+    require('@headlessui/tailwindcss')
+
+  ],
 }
 

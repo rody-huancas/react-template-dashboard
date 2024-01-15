@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Layouts
 import { LayoutAdmin } from "./layouts";
 // pages
-import { Chat, Error404, ForgetPassword, Home, Login, Profile, Register } from "./pages";
+import { Chat, Error404, ForgetPassword, Home, Login, Profile, Register, Tickets } from "./pages";
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="chat" element={<Chat />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="tickets" element={<Tickets />} />
         </Route>
 
         {/* Error */}
