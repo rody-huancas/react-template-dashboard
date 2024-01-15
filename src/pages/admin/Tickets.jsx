@@ -18,7 +18,7 @@ export const Tickets = () => {
   return (
     <div>
       {/* title */}
-      <div className="flex items-center justify-between gap-y-4 mb-10">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-y-4 mb-10">
         <div>
           <h1 className="font-bold text-gray-100 text-xl">Overview</h1>
           <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -70,8 +70,8 @@ export const Tickets = () => {
       {/* Tabs */}
       <Tab.Group>
         <div className="bg-secondary-100 p-8 rounded-bl-lg rounded-br-lg">
-          <Tab.List className="flex items-center justify-between gap-2 bg-secondary-900/50 py-3 px-4 rounded-lg">
-            <div className="flex items-center gap-4">
+          <Tab.List className="flex flex-col md:flex-row md:items-center md:justify-between gap-x-2 gap-y-6 bg-secondary-900/50 py-3 px-4 rounded-lg">
+            <div className="flex flex-col md:flex-row md:items-center gap-4">
               <Tab className="py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors duration-300 outline-none ui-selected:bg-secondary-900 ui-selected:text-gray-100">
                 Overview
               </Tab>
@@ -82,8 +82,8 @@ export const Tickets = () => {
                 FAQ
               </Tab>
             </div>
-            <div>
-              <button className="bg-primary/90 text-black hover:bg-primary flex items-center gap-4 py-2 px-4 rounded-lg transition-colors duration-300">
+            <div className="flex justify-center">
+              <button className="w-full bg-primary/90 text-black hover:bg-primary flex items-center justify-center gap-4 py-2 px-4 rounded-lg transition-colors duration-300">
                 <RiAddFill /> Create
               </button>
             </div>
@@ -97,7 +97,7 @@ export const Tickets = () => {
               <div className="bg-secondary-100 p-8 rounded-lg">
                 {/* title card */}
                 <div className="flex items-center justify-between mb-8">
-                  <h1 className="text-white text-2xl">Popular Tickets</h1>
+                  <h1 className="text-white text-lg md:text-2xl">Popular Tickets</h1>
                   <Link className="flex items-center gap-2 text-primary">
                     Support <RiArrowRightLine />
                   </Link>
@@ -106,10 +106,10 @@ export const Tickets = () => {
                 {/* Content card */}
                 <div>
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       Is team pricing available?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </Disclosure.Button>
@@ -133,10 +133,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How Extended Licese Work?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Angular
                       </span>
                     </Disclosure.Button>
@@ -160,10 +160,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How to install on a local machine?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Vue.js
                       </span>
                     </Disclosure.Button>
@@ -187,10 +187,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       What admin theme does?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Laravel
                       </span>
                     </Disclosure.Button>
@@ -218,7 +218,7 @@ export const Tickets = () => {
               <div className="bg-secondary-100 p-8 rounded-lg">
                 {/* title card */}
                 <div className="flex items-center justify-between mb-8">
-                  <h1 className="text-white text-2xl">FAQ</h1>
+                  <h1 className="text-white text-lg md:text-2xl">FAQ</h1>
                   <Link className="flex items-center gap-2 text-primary">
                     All FAQ <RiArrowRightLine />
                   </Link>
@@ -227,10 +227,10 @@ export const Tickets = () => {
                 {/* Content card */}
                 <div>
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex-wrap flex md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       Is team pricing available?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         React
                       </span>
                     </Disclosure.Button>
@@ -254,10 +254,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex-wrap flex md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How Extended Licese Work?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Angular
                       </span>
                     </Disclosure.Button>
@@ -281,10 +281,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       How to install on a local machine?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Vue.js
                       </span>
                     </Disclosure.Button>
@@ -308,10 +308,10 @@ export const Tickets = () => {
                   </Disclosure>
 
                   <Disclosure>
-                    <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
-                      <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                    <Disclosure.Button className="py-2 text-sm md:text-lg flex flex-wrap md:items-center gap-4">
+                      <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
                       What admin theme does?{" "}
-                      <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                      <span className="hidden md:block bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
                         Laravel
                       </span>
                     </Disclosure.Button>
@@ -522,29 +522,44 @@ export const Tickets = () => {
 
                   <ul className="flex flex-col gap-y-4">
                     <li>
-                        <Link to="" className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <RiArrowRightSLine/> Angular Admin
-                        </Link>
+                      <Link
+                        to=""
+                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                      >
+                        <RiArrowRightSLine /> Angular Admin
+                      </Link>
                     </li>
                     <li>
-                        <Link to="" className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <RiArrowRightSLine/> React Admin
-                        </Link>
+                      <Link
+                        to=""
+                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                      >
+                        <RiArrowRightSLine /> React Admin
+                      </Link>
                     </li>
                     <li>
-                        <Link to="" className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <RiArrowRightSLine/> Vue Admin
-                        </Link>
+                      <Link
+                        to=""
+                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                      >
+                        <RiArrowRightSLine /> Vue Admin
+                      </Link>
                     </li>
                     <li>
-                        <Link to="" className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <RiArrowRightSLine/> Svelte Admin
-                        </Link>
+                      <Link
+                        to=""
+                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                      >
+                        <RiArrowRightSLine /> Svelte Admin
+                      </Link>
                     </li>
                     <li>
-                        <Link to="" className="flex items-center gap-2 hover:text-primary transition-colors">
-                            <RiArrowRightSLine/> Astro Admin
-                        </Link>
+                      <Link
+                        to=""
+                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                      >
+                        <RiArrowRightSLine /> Astro Admin
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -553,7 +568,307 @@ export const Tickets = () => {
           </Tab.Panel>
 
           {/* FAQ */}
-          <Tab.Panel>Content 3</Tab.Panel>
+          <Tab.Panel>
+            <div className="bg-secondary-100 p-8 rounded-lg">
+              <div className="mb-10">
+                <h1 className="text-2xl text-white mb-2">
+                  Frequenstly Asked Questions
+                </h1>
+                <p className="text-gray-500">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat quasi nisi numquam error autem quod cum sunt mollitia
+                  nam aut officiis, delectus optio dignissimos eos. Distinctio
+                  veritatis asperiores magnam nostrum!
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* section 1 */}
+                <div>
+                  <h1 className="text-xl text-white mb-8">Buying Product</h1>
+
+                  <div className="border-b border-dashed border-gray-600 p-2">
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+                  </div>
+                </div>
+
+                {/* section 2 */}
+                <div>
+                  <h1 className="text-xl text-white mb-8">Installation</h1>
+
+                  <div className="border-b border-dashed border-gray-600 p-2">
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+
+                    <Disclosure>
+                      <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
+                        <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:transform ui-open:text-primary transition-all duration-300" />{" "}
+                        How does it work?{" "}
+                        <span className="bg-secondary-900 text-white text-sm py-0.5 px-2 rounded-lg">
+                          React
+                        </span>
+                      </Disclosure.Button>
+                      <Transition
+                        enter="transition duration-100 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-75 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Libero, molestiae iste! Quia recusandae maiores
+                          animi, veniam exercitationem ab perferendis odio{" "}
+                          <Link to="" className="text-primary">
+                            Learn more
+                          </Link>
+                        </Disclosure.Panel>
+                      </Transition>
+                    </Disclosure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </div>
